@@ -1,5 +1,5 @@
-import { AlertFeature } from "../types.ts";
-import { USER_AGENT } from "./constants.ts";
+import { AlertFeature } from "./types"
+import { USER_AGENT } from "./constants";
 
 // Helper function for making NWS API requests
 export async function makeNWSRequest<T>(url: string): Promise<T | null> {

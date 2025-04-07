@@ -1,10 +1,10 @@
 import { z } from "zod";
 
-import { server } from "./main.ts";
-import { makeNWSRequest, formatAlert } from "./helper-function.ts";
+import { server } from "./index";
+import { makeNWSRequest, formatAlert } from "./helper-function";
 
-import { AlertsResponse, ForecastPeriod, ForecastResponse, PointsResponse } from "../types.ts";
-import { NWS_API_BASE } from "./constants.ts";
+import { AlertsResponse, ForecastPeriod, ForecastResponse, PointsResponse } from "./types";
+import { NWS_API_BASE } from "./constants";
 
 // Register weather tools
 server.tool(
